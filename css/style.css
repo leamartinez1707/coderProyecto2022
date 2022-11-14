@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo de títulos y subtítulos*/
+.titulo-principal{
+    background-color:#3C4048;
+}
+.titulo-principal h1{
+    color: #EAEAEA;
+}
+h1{
+    font-size: 44px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    color: #3C4048
+}
+h2{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    color: #3C4048;
+}
+h3{
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    margin: 5px;
+    letter-spacing: 0.5px;
+    color: #3C4048;
+}
+h4{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*----------------------------------*/
+
+/* Estilo de header y barra de navegación*/
+header{
+    background-color: #3C4048;
+    height: 65px;
+    margin-top: 40px;
+}
+.logo-menu{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+}
+.logo-menu img{
+    width: 65px;
+    height: 65px;
+}
+.logo-menu:hover{
+    opacity: 0.9;
+}
+.menu-principal{
+    height: 65px;
+    text-align: center;
+    word-spacing: 30px;
+}
+
+.menu-principal li{
+    list-style-type: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.menu-principal li a{
+    padding: 10px;
+    margin: 10px auto;
+    color: #EAEAEA;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu-principal li a:hover{
+    color: #3C4048;
+    background-color: #EAEAEA;
+    border-radius: 30%;
+    opacity: 0.8;
+}
+/*-----------------------------------*/
+
+/* Estilo de los bodys, y barra de imagenes */
+body{
+    text-align: center;
+    background-color: #EAEAEA;
+}
+
+.imgBarra1 div{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.imgBarra1 img{  
+    width: 250px;
+    height: 250px;
+}
+.imgBarra1 img:hover{
+    border: 2px double #EAEAEA;
+    opacity: 0.9;
+}
+.imgBarra2 div{
+    display: inline-block;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.imgBarra2 img{
+    width: 500px;
+    height: px;
+}
+
+/*----------------------------------*/
+
+/* Estilo del footer */
+footer{
+    display: block;
+    background-color: #3C4048;
+    height: 100px;
+    text-align: center;
+}
+.redes img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.textoFooter a{
+    margin: 10px;
+    display: inline-block;
+    color: #EAEAEA;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*--------------------------*/
+
+
+.formulario{
+    display: block;
+    margin: 0px;
+    border: solid 1px #EAEAEA;
+    background-color: #3C4048;
+}
+
+/* Estilo Aside todas las paginas */
+aside{
+    display: block;
+}
+aside div{
+    text-align: left;
+}
+aside ul{
+    list-style-type: none;
+}
+/*-----------------------------*/
+
+/*Estilo main hombre*/
+
+.main-hombres div{
+    margin: 30px;
+}
+/*-----------------------------*/
