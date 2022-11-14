@@ -41,11 +41,16 @@ header{
     background-color: #3C4048;
     height: 65px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: nowrap;
 }
 .logo-menu{
     width: 65px;
     height: 65px;
-    position: absolute;
+    position: relative;
 }
 .logo-menu img{
     width: 65px;
@@ -54,9 +59,20 @@ header{
 .logo-menu:hover{
     opacity: 0.9;
 }
+.mi-cuenta{
+    position: relative;
+}
+.mi-cuenta img{
+    width: 35px;
+    height: 35px; 
+}
+.mi-carrito img{
+    width: 35px;
+    height: 35px;
+    margin-right: 50px;
+}
 .menu-principal{
     height: 65px;
-    text-align: center;
     word-spacing: 30px;
 }
 
@@ -71,7 +87,7 @@ header{
     padding: 10px;
     margin: 10px auto;
     color: #EAEAEA;
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 
@@ -80,6 +96,7 @@ header{
     background-color: #EAEAEA;
     border-radius: 30%;
     opacity: 0.8;
+    transition: .4s;
 }
 /*-----------------------------------*/
 
