@@ -72,6 +72,12 @@ header{
     width: 30px;
     height: 30px;
 }
+.mi-cuenta:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    background-color: #EAEAEA;
+    border-radius: 100%;   
+}
 .mi-carrito{
     margin: 5px;
     padding: 5px;
@@ -87,12 +93,7 @@ header{
     border-radius: 100%;   
 }
 
-.mi-cuenta:hover{
-    transition: 1s;
-    transform: scale(1.2);
-    background-color: #EAEAEA;
-    border-radius: 100%;   
-}
+
 .menu-principal{
     word-spacing: 30px;
 }
@@ -132,8 +133,8 @@ body{
     margin-bottom: 50px;
 }
 .imgBarra1 img{  
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
 }
 .imgBarra1 img:hover{
     border: 2px double #EAEAEA;
@@ -192,6 +193,29 @@ aside ul{
 /*-----------------------------*/
 
 /*Estilo main hombre*/
+.main-hombres {  
+    display: grid;
+    grid-template-columns: 0.6fr 1.8fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-auto-columns: 1fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aside imgBarra1"
+      "aside imgBarra1"
+      "aside imgBarra1"
+      "aside imgBarra1"
+      "aside imgBarra1"
+      "aside imgBarra1"
+      "aside imgBarra1"
+      "aside imgBarra1";
+  }
+  
+  .imgBarra1 { grid-area: imgBarra1; }
+  
+  .aside { grid-area: aside; }
+  
+      
 
 .main-hombres div{
     margin: 30px;
