@@ -39,40 +39,61 @@ h4{
 /* Estilo de header y barra de navegación*/
 header{
     background-color: #3C4048;
-    height: 65px;
-    margin-top: 40px;
+    height: 60px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
     flex-wrap: nowrap;
 }
-.logo-menu{
-    width: 65px;
-    height: 65px;
-    position: relative;
-}
+
+
 .logo-menu img{
-    width: 65px;
-    height: 65px;
+    width: auto;
+    height: 50px;
+    margin: 5px 0px 2px 5px;
 }
 .logo-menu:hover{
-    opacity: 0.9;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.perfil-carrito{
+    display: flex;
+    position: relative;
+    margin-right: 20px;
 }
 .mi-cuenta{
-    position: relative;
+    margin: 5px;
+    padding: 5px;
 }
 .mi-cuenta img{
-    width: 35px;
-    height: 35px; 
+    width: 30px;
+    height: 30px;
+}
+.mi-carrito{
+    margin: 5px;
+    padding: 5px;
 }
 .mi-carrito img{
-    width: 35px;
-    height: 35px;
-    margin-right: 50px;
+    width: 30px;
+    height: 30px;  
+}
+.mi-carrito:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    background-color: #EAEAEA;
+    border-radius: 100%;   
+}
+
+.mi-cuenta:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    background-color: #EAEAEA;
+    border-radius: 100%;   
 }
 .menu-principal{
-    height: 65px;
     word-spacing: 30px;
 }
 
