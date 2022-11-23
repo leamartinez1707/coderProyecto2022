@@ -48,22 +48,52 @@ h4{
 /*----------------------------------*/
 
 /* Estilo de header y barra de navegación*/
-header{
+.menu-prin{
     background-color: #3C4048;
-    height: 60px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+    margin-top: 20px;
+} 
+
+.menu-prin li{
+    list-style-type: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    display: inline-block;
 }
 
+.menu-prin li a{
+    padding: 5px;
+    color: #EAEAEA;
+    display: block;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.menu-prin li a:hover{
+    color: #3C4048;
+    background-color: #EAEAEA;
+    border-radius: 30%;
+    opacity: 0.8;
+    transition: .4s;
+}
+.menu__submenu{
+    text-align: left;
+    background-color: #3C4048;
+    padding: 10px;
+}
+.menu__submenu li a{
+    color: #EAEAEA;
+}
+.menu__submenu li a:hover{
+    background-color: #3C4048;
+    color: #EAEAEA;
+    transform: scale(1.1);
+    transition: .4s;
+}
 
 .logo-menu img{
-    width: auto;
+
     height: 50px;
-    margin: 5px 0px 2px 5px;
+    margin-left: 5px;
 }
 .logo-menu:hover{
     transition: 1s;
@@ -73,11 +103,13 @@ header{
 .perfil-carrito{
     display: flex;
     position: relative;
-    margin-right: 20px;
+    margin: 5px;
 }
 .mi-cuenta{
     margin: 5px;
     padding: 5px;
+    background-color: white;
+    border-radius: 30%;
 }
 .mi-cuenta img{
     width: 30px;
@@ -92,6 +124,8 @@ header{
 .mi-carrito{
     margin: 5px;
     padding: 5px;
+    background-color: white;
+    border-radius: 30%;
 }
 .mi-carrito img{
     width: 30px;
@@ -102,34 +136,6 @@ header{
     transform: scale(1.2);
     background-color: #EAEAEA;
     border-radius: 100%;   
-}
-
-
-.menu-principal{
-    word-spacing: 30px;
-}
-
-.menu-principal li{
-    list-style-type: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    display: inline-block;
-}
-
-.menu-principal li a{
-    padding: 10px;
-    margin: 10px auto;
-    color: #EAEAEA;
-    display: block;
-    text-decoration: none;
-}
-
-.menu-principal li a:hover{
-    color: #3C4048;
-    background-color: #EAEAEA;
-    border-radius: 30%;
-    opacity: 0.8;
-    transition: .4s;
 }
 /*-----------------------------------*/
 
@@ -164,25 +170,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
 
 /*----------------------------------*/
 
-/* Estilo del footer */
-footer{
-    display: block;
-    background-color: #3C4048;
-    height: 100px;
-    text-align: center;
-}
-.redes img{
-    width: 25px;
-    height: 25px;
-    margin: 10px;
-}
-.textoFooter a{
-    margin: 10px;
-    display: inline-block;
-    color: #EAEAEA;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-/*--------------------------*/
+
 
 
 .formulario-contacto{
@@ -240,3 +228,24 @@ aside ul{
 }
 
 /*-----------------------------*/
+
+/* Estilo del footer */
+footer{
+    display: block;
+    background-color: #3C4048;
+    height: 100px;
+    text-align: center;
+}
+.redes img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.textoFooter h3{
+    margin: 8px;
+    display: inline-block;
+    color: #EAEAEA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+/*--------------------------*/
