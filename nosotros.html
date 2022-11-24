@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -19,76 +21,119 @@
 <body>
 
     <header>
-
-        <div class="logo-menu">
-          <a href="index.html">
-              <img src="./imagenes/logoooo.png" alt="">
-          </a></div>
-  
-          <!--Sin usar aún ya que no encuentro la forma de encastrarlo en el menú -->
-       <!-- <a class="mi-cuenta" href="#">
-              <img src="./imagenes/micuenta.png" alt="Mi cuenta">
-  
-          </a>
-          <a class="mi-carrito" href="#">
-              <img src="./imagenes/carrocompra.png" alt="Carro de Compras">
-          </a> -->
-
-    <nav class="menu-principal">
-                
-        <ul>
-                <li>
-                    <a href="index.html" >INICIO</a>
-                </li>
+        <nav class="navbar navbar-expand-lg menu-prin">
+            <div class="container-fluid">
+              <a class="navbar-brand logo-menu" href="./index.html">
+                <img src="./imagenes/logoooo.png" alt="">
     
-                <li>
+              </a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">            Productos
+                    </a>
+                    <ul class="dropdown-menu menu__submenu">
+                      <li><a class="dropdown-item" href="./hombres.html">Hombres</a></li>
+                      <li><a class="dropdown-item" href="./mujeres.html">Mujeres</a></li>
+                      <li><a class="dropdown-item" href="./niños.html">Niños</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="perfil-carrito"> 
+                <a class="mi-cuenta" href="#">
+                <img src="./imagenes/micuenta.png" alt="Mi cuenta">
+            </a>
+            <a class="mi-carrito" href="#">
+                <img src="./imagenes/carrocompra.png" alt="Carro de Compras">
+            </a>
+            </div>
+            </div>
     
-                    <a href="hombres.html" >HOMBRES</a> 
-    
-                </li>
-    
-                <li>
-                    <a href="mujeres.html" >MUJERES</a>
-                    </li>
-                    
-                    <li>
-                        <a href="niños.html">NIÑOS</a>
-    
-                    </li>
-    
-                    <li>
-                        <a href="sale.html" >SALE</a>
-                        </li>
-            </ul>
-        </nav>
-
-</header>
+          </nav>
+        </header>
     
     <main>
-        <section>
-            <div>
-                <h1>Agregar contenido Section</h1>
-            </div>
-        </section>
 
+    <div class="row">
+      <div class="col-12">
+        <h1>Información acerca de nosotros!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Quiénes somos
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>Acerca de nosotros.</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis blanditiis hic laborum ipsum modi nesciunt temporibus? Aliquid ipsa est corrupti dolorum impedit fugiat molestias tempore beatae possimus error odit autem itaque minima doloribus illum, vero libero architecto dolore laborum temporibus eum alias! Harum dolorem non iure, blanditiis reiciendis maxime, libero in eaque vero, exercitationem ipsa. Provident quod aliquid veniam accusantium pariatur omnis, a minima reprehenderit ducimus voluptatibus ad repellendus aspernatur placeat reiciendis rerum nam est doloremque culpa eaque dicta sequi vero nulla! Eius vero repellat officiis vitae quibusdam illum hic pariatur veritatis explicabo cum obcaecati, ipsum odio dignissimos eligendi! Ipsum dignissimos nostrum dolor aliquam enim esse culpa molestias atque neque, consequuntur possimus repellat. Deserunt praesentium quo quis fugit magni suscipit ipsa minus hic laboriosam commodi iusto doloribus unde debitis iure cumque, minima doloremque rerum et voluptatem corrupti. Dolorem et dicta eum quisquam fugit! Ullam illum fugiat, odio natus rem qui.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Cómo comprar
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>Cómo puedo comprar en elem.com.uy? Fácil.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugiat voluptate nisi optio, reprehenderit sed cupiditate architecto, saepe soluta deserunt iste. Quidem fuga, delectus nihil doloribus sint, eveniet quia officia facere quisquam nulla praesentium velit amet. Repellat fugit, rem voluptatum hic voluptatem id illum nihil quas eos ab sequi laborum eveniet. Neque ea cumque omnis est nulla ab incidunt perspiciatis error, adipisci, totam vero. Corporis labore delectus quasi quas suscipit fugiat, placeat quia voluptas, magni nisi ea? Reprehenderit, ex, sed illo quos officiis rem numquam velit totam quae nemo quod mollitia aperiam asperiores sequi consequatur beatae dignissimos consequuntur nulla reiciendis!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Pagos
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>¿Cómo puedo pagar mi pedido? | ¿Qué formas de pago ofrecen?</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius natus, vel, vitae fugit quasi fuga maxime unde a ex, qui dolor veniam deleniti libero ratione ad! Neque dolorum natus sint corporis, quia ea perferendis unde error tenetur voluptatem dolor quas iure cupiditate ipsam, modi quam dicta ad qui eveniet vitae?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
 
 
     <footer>
-
-        <div class="redes">
-         <a href=https://www.instagram.com/leamartinez1707> <img src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="Logo Instagram"></a>
-         <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733585.png" alt="Logo Whatsapp"></a>
-     </div>
-     
-         <div class="textoFooter">
-         <a href="#">Terminos y condiciones</a>
-         <a href="#">Nosotros</a>
-         <a href="contacto.html">Contacto</a>
-     </div>
-     </footer>
+        <div class="row">
+        <div class="col-12">
+       <div class="redes">
+        <a href=https://www.instagram.com/leamartinez1707> <img src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="Logo Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733585.png" alt="Logo Whatsapp"></a>
+    </div>
     
-</body>
-
-
-</html>
+        <div class="textoFooter">
+    
+            <h3>Todos los derechos reservados ©2022</h3>
+    </div>
+    </div>
+    </div>
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+    </html>
