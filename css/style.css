@@ -16,7 +16,7 @@
     transition: 0.4s;
 }
 .titulo__secundario{
-    margin: 15px;
+    margin: 10px auto;
     background-color: #3C4048;
     color: #EAEAEA;
 }
@@ -174,10 +174,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
 /*----------------------------------*/
 
 .formulario-contacto{
-    display: block;
     padding: 50px;
     margin: 50px;
-    border: double 1px #3C4048;  
+    border: double 1px #3C4048; 
 }
 
 
@@ -249,11 +248,21 @@ aside ul{
 /*Media Query*/
 @media only screen and (max-width:576px){
      
-    .imgBarra1 div{
-        display: inline-block;
-        margin: 20px auto;
-        padding: 0px;
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
     }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.5rem;
+    }
+    h4{
+        font-size: 0.4rem;
+    }
+
+    
 
     .main-generos{
      grid-template-columns: 100%;
@@ -263,22 +272,60 @@ aside ul{
      "imgBarra1"
      ;
         }
-        aside{
-            display: block;
-            margin: 0px auto;
-            height: 400px;
+        .menu__izquierda{
+            margin: 10px auto;
+            margin-top: 40px;
+            background-color: #3C4048;
         }
-        aside div{
-            text-align: center;
-            margin: 10px;
+        .menu__izquierda ul a{
+            color: #EAEAEA;
+        }
+        .menu__izquierda h2{
+            color: #EAEAEA;
+            padding: 5px;
         }
         .menu__submenu{
             text-align: center;
+        }
+
+        .imgBarra1 div{
+            display: inline-block;
+            flex-direction: row;
+        }
+        .imgBarra1 div img{
+            width: 100px;
+            height: 100px;
         }
  }
 
  @media only screen and (max-width:768px){
      
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.5rem;
+    }
+    h4{
+        font-size: 0.4rem;
+    }
+    .menu__izquierda{
+        margin: 10px auto;
+        margin-top: 40px;
+        background-color: #3C4048;
+    }
+    .menu__izquierda ul a{
+        color: #EAEAEA;
+    }
+    .menu__izquierda h2{
+        color: #EAEAEA;
+        padding: 5px;
+    }
+
     .imgBarra1 div{
         display: inline-block;
         margin: 15px auto;
@@ -311,12 +358,10 @@ aside ul{
  @media only screen and (max-width:992px){
      
     .imgBarra1 div{
-        display: inline-block;
-        margin: 15px auto;
         margin-top: 40px;
         padding: 10px;
     }
-    .imgBarra1 img{
+    .imgBarra1 div img{
         width: 200px;
         height: 200px;
     }
@@ -325,9 +370,9 @@ aside ul{
      
     .imgBarra1 div{
         display: inline-block;
-        margin: 40px 20px;
+        margin: 10px 10px;
         margin-top: 40px;
-        padding: 0px;
+        padding: 10px;
     }
     .imgBarra1 img{
         width: 200px;
