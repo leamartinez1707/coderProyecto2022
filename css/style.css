@@ -242,64 +242,29 @@ aside ul{
 } 
 
 /*-----------------------------*/
-
-
-
-/*Media Query*/
-@media only screen and (max-width:576px){
+@media only screen and (max-width:768px){
      
-    h1{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    h2{
-        font-size: 1rem;
-    }
-    h3{
-        font-size: 0.5rem;
-    }
-    h4{
-        font-size: 0.4rem;
-    }
-
-    
-
     .main-generos{
-     grid-template-columns: 100%;
-     grid-template-rows: 2fr;
-     grid-template-areas:
-     "aside"
-     "imgBarra1"
-     ;
-        }
-        .menu__izquierda{
-            margin: 10px auto;
-            margin-top: 40px;
-            background-color: #3C4048;
-        }
-        .menu__izquierda ul a{
-            color: #EAEAEA;
-        }
-        .menu__izquierda h2{
-            color: #EAEAEA;
-            padding: 5px;
-        }
-        .menu__submenu{
-            text-align: center;
-        }
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+        "aside"
+        "imgBarra1"
+        ;
+           }
+           aside{
+               display: block;
+               margin: 0px;
+               height: 400px;
+           }
+           aside div{
+               text-align: center;
+               margin: 10px;
+           }
+           .menu__submenu{
+               text-align: center;
+           }
 
-        .imgBarra1 div{
-            display: inline-block;
-            flex-direction: row;
-        }
-        .imgBarra1 div img{
-            width: 100px;
-            height: 100px;
-        }
- }
-
- @media only screen and (max-width:768px){
-     
     h1{
         font-size: 1.5rem;
         text-align: center;
@@ -328,8 +293,33 @@ aside ul{
 
     .imgBarra1 div{
         display: inline-block;
-        margin: 15px auto;
-        padding: 0px;
+        flex-direction: row;
+        margin: 20px auto;
+    }
+    .card img{
+        width: 200px;
+        height: 200px;
+    }
+    
+
+ }
+
+
+/*Media Query*/
+@media only screen and (max-width:576px){
+     
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.5rem;
+    }
+    h4{
+        font-size: 0.4rem;
     }
 
     .main-generos{
@@ -340,45 +330,36 @@ aside ul{
      "imgBarra1"
      ;
         }
-        aside{
-            display: block;
-            margin: 0px;
-            height: 400px;
+        .menu__izquierda{
+            margin: 10px auto;
+            margin-top: 20px;
+            background-color: #3C4048;
         }
-        aside div{
-            text-align: center;
-            margin: 10px;
+        .menu__izquierda ul a{
+            color: #EAEAEA;
+        }
+        .menu__izquierda h2{
+            color: #EAEAEA;
+            padding: 5px;
         }
         .menu__submenu{
             text-align: center;
         }
 
+        .imgBarra1 div{
+            display: inline-block;
+            flex-direction: row;
+        }
+        .card img{
+            width: 150px;
+            height: 150px;
+        }
  }
 
- @media only screen and (max-width:992px){
-     
-    .imgBarra1 div{
-        margin-top: 40px;
-        padding: 10px;
-    }
-    .imgBarra1 div img{
-        width: 200px;
-        height: 200px;
-    }
-}
-@media only screen and (max-width:1200px){
-     
-    .imgBarra1 div{
-        display: inline-block;
-        margin: 10px 10px;
-        margin-top: 40px;
-        padding: 10px;
-    }
-    .imgBarra1 img{
-        width: 200px;
-        height: 200px;
-    }
-}
+ 
+
+
+
 
 /*-----------------------------*/
 
