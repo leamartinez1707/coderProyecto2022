@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de ropa Uruguaya, diseñada para satisfacer todas las necesidades de nuestros clientes.">
+    <meta name="keywords" content="ROPA, TIENDA, URUGUAY, VESTIMENTA, CALZADO">
     <title>elem | CONTACTO</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -45,9 +47,9 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">            Productos
                     </a>
                     <ul class="dropdown-menu menu__submenu">
-                      <li><a class="dropdown-item" href="./hombres.html">Hombres</a></li>
-                      <li><a class="dropdown-item" href="./mujeres.html">Mujeres</a></li>
-                      <li><a class="dropdown-item" href="./niños.html">Niños</a></li>
+                      <li><a class="dropdown-item" href="./productos/hombres.html">Hombres</a></li>
+                      <li><a class="dropdown-item" href="./productos/mujeres.html">Mujeres</a></li>
+                      <li><a class="dropdown-item" href="./productos/niños.html">Niños</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -65,31 +67,59 @@
           </nav>
         </header>
 
-    <br>
     
     <main>
         <div><h1>
-            Ingrese su consulta
+            Ingresá tu consulta!
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ducimus laudantium ullam laboriosam porro similique sequi in ex exercitationem quibusdam.</p>   
+        <p class="fs-5">Tu opinión nos importa! Dejanos un mensaje con cualquier inconveniente que hayas tenido o recomendación que quieras aportar, para mejorar la calidad de nuestra página web! </p>   
     </div>
-        <form action="">
-        <fieldset class="formulario-contacto">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-            </div>
-                     <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
+
+      <section class="d-flex justify-content-center align-items-center formularioContacto">
+        <div class="bg-light card shadow col-xs-12 col-sm-8 col-md-6 col-lg-4 p-4"> 
+            <div class="mb-1">
+                <form id = "contacto" >
+                    <div class="mb-4 d-block justify-content-between"> 
+                        <div class="lg">
+                            <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder= "ej: Gabriel" required>
+                            <div class="nombre text-danger "></div>
+                        </div>
+                        <div >
+                            <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido" placeholder= "ej: Pacheco" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
                     </div>
-           
-        </fieldset>
-    </form>
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder= "ej: gpmcheco@mail.com" required>
+                        <div class="correo text-danger"></div>
+                        
+                    </div> 
+                    <div class="mb-4">
+                        <label for="sexo"><i class="bi bi-gender-ambiguous"></i> Sexo: </label>
+                        <input type="radio" class="form-check-input"  name="sexo"  value="masculino" > Masculino
+                        <input type="radio" class="form-check-input" name="sexo"  value="femenino" > Femenino
+                        <div class="sexo text-danger"></div>
+                    </div>  
+                    <div class="mb-4">
+                        <label for="mensaje"> <i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="ej: hola"></textarea>
+                        <div class="mensaje text-danger"></div>
+                    </div> 
+                    
+                    <div class="barraEnviar mb-2">
+                        <button id ="botton" class="col-12 btn btnEnviar d-flex justify-content-center ">
+                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div> 
+                              
+                </form>
+            </div>
+        </div>
+    </section>
+        
             </main>
 <br>
 
