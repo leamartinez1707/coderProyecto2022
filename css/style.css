@@ -80,6 +80,7 @@ h4 {
   background-color: #3C4048;
   padding: 10px; }
   .menu__submenu li a {
+    display: inline-block;
     color: #EAEAEA;
     margin: 5px; }
     .menu__submenu li a:hover {
@@ -194,14 +195,13 @@ aside {
   .imgBarra1 img:hover {
     border: 1px double gray;
     opacity: 0.9; }
-
-/*-----------------------------*/
-/*Media Query*/
+    /*Media Query*/
 @media only screen and (max-width: 768px) {
   .main-generos {
     grid-template-columns: 100%;
     grid-template-rows: 2fr;
-    grid-template-areas: "aside" "imgBarra1"; }
+    grid-template-areas: "aside"
+ "imgBarra1"; }
   aside {
     display: block;
     margin: 0px;
@@ -241,7 +241,8 @@ aside {
   .main-generos {
     grid-template-columns: 100%;
     grid-template-rows: 2fr;
-    grid-template-areas: "aside" "imgBarra1"; }
+    grid-template-areas: "aside"
+ "imgBarra1"; }
   h1 {
     font-size: 1.5rem;
     text-align: center; }
