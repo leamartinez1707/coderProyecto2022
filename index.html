@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de ropa Uruguaya, diseñada para satisfacer todas las necesidades de nuestros clientes.">
+    <meta name="keywords" content="ROPA, TIENDA, URUGUAY, VESTIMENTA, CALZADO">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -46,9 +48,9 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">            Productos
                 </a>
                 <ul class="dropdown-menu menu__submenu">
-                  <li><a class="dropdown-item " href="./hombres.html">Hombres</a></li>
-                  <li><a class="dropdown-item " href="./mujeres.html">Mujeres</a></li>
-                  <li><a class="dropdown-item " href="./niños.html">Niños</a></li>
+                  <li><a class="dropdown-item " href="./productos/hombres.html">Hombres</a></li>
+                  <li><a class="dropdown-item " href="./productos/mujeres.html">Mujeres</a></li>
+                  <li><a class="dropdown-item " href="./productos/niños.html">Niños</a></li>
                 </ul>
               </li>
             </ul>
@@ -76,7 +78,7 @@
         </div>
      <div class="row video-principal">
         <div class="col-12">
-            <div class="ratio ratio-16x9"><iframe width="80%" height="700" src="https://www.youtube.com/embed/e72kfOYJ0do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="ratio ratio-16x9"><iframe height="700" src="https://www.youtube.com/embed/e72kfOYJ0do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -94,76 +96,34 @@
     </div>   
 
     
-    <div class="row m-1 p-2">
+    <div class="row">
         <div class="col-12">
-            <div id="carouselExampleIndicators" class="carousel slide w-50 m-auto" data-bs-ride="true">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./imagenes/remNegra.png" class="d-block w-100 m-auto" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/remRoja.png" class="d-block w-100 m-auto" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/remNegra.png" class="d-block w-100 m-auto" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/remRoja.png" class="d-block w-100 m-auto" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/remNegra.png" class="d-block w-100 m-auto" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+          <div id="carouselExampleInterval" class="carousel slide w-50 m-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./imagenes/remRoja.png" class="w-50" alt="...">
               </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./imagenes/remNegra.png" class=" w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/remRoja.png" class="w-50" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
 </div>
-
-<div class="row">
-  <div class="col-12">
-      <h2 class="titulo__secundario">
-          PREPARATE PARA EL VERANO!!
-      </h2> 
-  </div>
-  <div id="carouselExampleInterval" class="carousel slide w-50 m-auto" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="./imagenes/remRoja.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./imagenes/remNegra.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./imagenes/remRoja.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>   
-
-</main>
 </section>  
+</main>
+
    
 <footer>
     <div class="row">
